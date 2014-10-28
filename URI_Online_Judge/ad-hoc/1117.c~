@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc, char *argv[]){
+	int cont, distancia, distTotal=0;
+	char *nome, *sobrenome;
+	float media;
+	
+	while(scanf("%s %s", nome, sobrenome)!=EOF){
+		scanf("%d", &distancia);
+		distTotal += distancia;
+		cont++;
+	}
+
+	media = distTotal/cont;
+	printf("%.1f", media);
+}

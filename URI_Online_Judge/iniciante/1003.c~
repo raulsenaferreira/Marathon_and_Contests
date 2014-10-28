@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc, char *argv[]){
+	int a,b;
+	/*int n = atoi(argv[1]);
+	int d = atoi(argv[2]);
+	int c = atoi(argv[3]);*/
+
+	scanf("%d", &a);
+	scanf("%d", &b);
+	printf("SOMA = %d\n", a+b);
+		
+}
