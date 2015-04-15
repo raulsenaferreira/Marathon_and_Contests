@@ -14,8 +14,8 @@ int main(int argc, char *argv[]){
 	vF[1] = vI[1];
 	vF[2] = vI[2];
 	
-	for(i = 0; i < 3; i++){
-		for(j = 2; j > 1; j--){
+	for(i = 0; i < 2; i++){
+		for(j = 1; j < 3; j++){
 			if(vF[i] > vF[j]){
 				aux = vF[j];
 				vF[j] = vF[i];

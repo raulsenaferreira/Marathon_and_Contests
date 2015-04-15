@@ -8,15 +8,18 @@ int main(int argc, char const *argv[])
 	double n1, n2, n3, n4, media;
 
 	while(scanf("%lf %lf %lf %lf", &n1, &n2, &n3, &n4)==4){
-		media = (n1+n2+n3+n4)/4;
-		cout << "Media: " << setprecision (2) << media << endl;
+		media = ((n1*2)/10+(n2*3)/10+(n3*4)/10+(n4*1)/10);
+		cout << "Media: " << fixed << setprecision (1) << media << endl;
 
 		if (media < 5.0)
 		{	
 			cout << "Aluno reprovado." << endl;
 		}
-		else if (media >=5.0 && media <= 6.9)
+		else if (media >=7.0)
 		{
+			cout << "Aluno aprovado." << endl;
+		}
+		else{
 			double mediaFinal;
 			cout << "Aluno em exame." << endl;
 
@@ -32,10 +35,7 @@ int main(int argc, char const *argv[])
 			else{
 				cout << "Aluno reprovado." << endl;
 			}
-			cout << "Media final: " << setprecision (2) << mediaFinal << endl;
-		}
-		else{
-			cout << "Aluno aprovado." << endl;
+			cout << "Media final: " << fixed << setprecision (1) << mediaFinal << endl;
 		}
 	}		
 		
