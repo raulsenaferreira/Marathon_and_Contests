@@ -7,7 +7,7 @@ digits = 10
 for i in range(0,T):
 	x=int(input())
 	arr=[]
-	res = [0,0,0,0,0,0,0,0,0,0]
+	res = [0]*digits
 	
 	for j in range(1,N+1):
 		a = x*j
